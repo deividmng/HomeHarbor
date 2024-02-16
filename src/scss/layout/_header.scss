@@ -1,0 +1,50 @@
+.inicio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/assets/img/casa.jpg);
+}
+
+.header {
+    background-color: $grisOscuro;
+   
+   
+    
+
+     h1 {
+            color: $white;
+            font-weight: $bold;
+            line-height: 2;
+            max-width: 10rem;
+        }
+    &.inicio {
+        @include tablet {
+            min-height: 20rem;
+            background-repeat: none;
+            background-position: center center;
+            background-size: cover;
+        }
+        h1 {
+            color: $white;
+            font-weight: $bold;
+            line-height: 2;
+            max-width: 10rem;
+        }
+    }
+
+    .contenido-header {
+        @include tablet {
+            // min-height: 10rem;
+        }
+    }
+}
+
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+
+  
+}
+
+

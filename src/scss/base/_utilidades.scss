@@ -1,0 +1,21 @@
+
+.contenido-centrado {
+    max-width: 80rem;
+}
+
+.alinear-right {
+    display: flex;
+    justify-content: flex-end;
+    margin: -19px 51px 8px -10px;
+}
+
+
+body {
+    background-color: darken($color: #e1e1e1, $amount: 3)  ;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}

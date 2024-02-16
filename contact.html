@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeHarbor</title>
+    <link rel="stylesheet" href="src/scss/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+          <div class="barra">
+            <a href="/">
+              <h1 class="icono-home">
+                <span class="home-text">Home</span>
+                <span class="harbor-text">Harbor</span>
+              </h1>
+            </a>
+  
+            <nav class="navegacion">
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <!--close barra-->
+        </div>
+      </header>
+     <main class="contenedor  contacto">
+        <h1>CONTACT US </h1>
+
+   
+        <div class="img-contacto">
+            <img src="/assets/img/home (1).jpg" alt="">
+        </div>
+
+        <h2>Fill out the Contact form</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="nombre">Name</label>
+                <input type="text" placeholder="Your Name" id="nombre">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Your Email" id="email">
+
+                <label for="telefono">Phone</label>
+                <input type="tel" placeholder="Your Phone" id="telefono">
+
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Property Information</legend>
+
+                <label for="opciones">Buy or Sell:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="Compra">Buy</option>
+                    <option value="Vende">Sell</option>
+                </select>
+
+                <label for="presupuesto">Price or Budget</label>
+                <input type="number" placeholder="Your Price or Budget" id="presupuesto">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Preferences</legend>
+
+                <p>How would you like to be contacted</p>
+
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Phone</label>
+                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+                    <label for="contactar-email">E-mail</label>
+                    <input name="contacto" type="radio" value="email" id="contactar-email">
+                </div>
+
+                <p>If you chose phone, choose the date and time</p>
+
+                <label for="fecha">Date:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Time:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+            </fieldset>
+
+            <input type="submit" value="Submit" class="boton-verde">
+        </form>
+     </main>
+
+     <footer class="footer seccion">
+        <p class="copy-right">
+            All rights reserved
+        </p>
+     </footer>
+</body>
+</html>
